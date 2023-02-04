@@ -12,7 +12,7 @@ public class RootSpawner : MonoBehaviour
     public float Horizontalrange = 1;
     public float Verticalrange = 1;
     public List<GameObject> spawnedRoots = new List<GameObject>();
-
+    //public Sprite[] sprites;
     //public float TimerForRoots;
 
     // Start is called before the first frame update
@@ -22,8 +22,8 @@ public class RootSpawner : MonoBehaviour
         for (int i = 0; i < rootsCount; ++i)
         {
             Vector3 pos = pivot + new Vector3(Random.Range(-1 * Horizontalrange, Horizontalrange), Random.Range(-1 * Verticalrange - 1, Verticalrange - 1), pivot.z - 1);
-            var rootToAdd = Instantiate(root, pos, Quaternion.identity);
-
+            var rootToAdd = Instantiate(root,new Vector3(-6.46000004f, 0.25f, 0f), Quaternion.Euler(new Vector3(0, 0, Random.Range(-45f, 45f))));
+            rootToAdd.GetComponent<SpriteRenderer>().sprite = RootManager.sprites[Random.Range(0, RootManager.sprites.Length)]; ;
 
             spawnedRoots.Add(rootToAdd);
             RootManager.roots.Add(rootToAdd);

@@ -9,6 +9,7 @@ public class RootManagerScript : MonoBehaviour
     public Color32 cBlack = new Color32(0, 0, 0, 255);
     // Start is called before the first frame update
     Vector3 testvector = new Vector3(0, 1, 1);
+    public Sprite[] sprites;
     public void Draw()
     {
         int randomRoot = Random.Range(0, roots.Count);
