@@ -17,7 +17,11 @@ public class Root : MonoBehaviour
 
 
             if (clicks == clickCount)
+            {
+                
                 Destroy(gameObject);
+                Debug.Log(gameObject);
+            }
         }
     }
     void Start()

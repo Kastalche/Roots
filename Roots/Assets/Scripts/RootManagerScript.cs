@@ -15,10 +15,11 @@ public class RootManagerScript : MonoBehaviour
         int randomRoot = Random.Range(0, roots.Count);
         for (int i = 0; i < roots.Count; i++)
         {
+            
             if (i == randomRoot)
             {
                 //roots[i].SetActive(true);
-                roots[i].GetComponent<SpriteRenderer>().color = cBlack;
+                roots[i].transform.GetComponent<SpriteRenderer>().color = cBlack;
             }
             //else
             //{
