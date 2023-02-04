@@ -20,7 +20,7 @@ public class RootSpawner : MonoBehaviour
         Vector3 pivot = spawnPivot.transform.position;
         for (int i = 0; i < rootsCount; ++i)
         {
-            Vector3 pos = pivot + new Vector3(Random.Range(-1 * Horizontalrange, Horizontalrange), Random.Range(-1 * Verticalrange - 1, Verticalrange - 1), pivot.z);
+            Vector3 pos = pivot + new Vector3(Random.Range(-1 * Horizontalrange, Horizontalrange), Random.Range(-1 * Verticalrange - 1, Verticalrange - 1), pivot.z - 1);
             var rootToAdd = Instantiate(root, pos, Quaternion.identity);
 
 
