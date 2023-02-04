@@ -10,14 +10,14 @@ public class TimerManager : MonoBehaviour
     
     void gameTime()
     {
-        Debug.Log(timerForGame);
+       // Debug.Log(timerForGame);
         if (timerForGame > 1f)
         {
             timerForGame -= Time.deltaTime;
         }
         else
         {
-            Debug.Log("Game Over");
+           // Debug.Log("Game Over");
         }
     }
     void Tick()
@@ -25,7 +25,7 @@ public class TimerManager : MonoBehaviour
         if (timeForRoots > 0f)
         {
             timeForRoots -= Time.deltaTime;
-            Debug.Log(timeForRoots);
+         //   Debug.Log(timeForRoots);
         }
         else
         {
