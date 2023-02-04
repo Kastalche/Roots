@@ -1,13 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
 
     public ObstacleController obstacleController;
+    public ScoreController scoreController;
     public float speed = 100f;
     private Vector3 screenBoundries;
+    public int hp = 10;
+
     // Start is called before the first frame update
     void Start() {
         screenBoundries = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
@@ -22,7 +26,12 @@ public class PlayerController : MonoBehaviour
         pos.y = Mathf.Clamp(pos.y, (-1 * screenBoundries.y + 0.5f), screenBoundries.y - 0.5f);
         transform.position = pos;
     }
+
     void OnCollisionEnter2D(Collision2D collider) {
         obstacleController.CollectedObstacle(collider.gameObject);
+        scoreController.updateScore(--hp);
+        if(hp < 0) {
+            Debug.Log("GameOver");
+        }
     }
 }
