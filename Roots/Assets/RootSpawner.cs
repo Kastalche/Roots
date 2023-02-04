@@ -26,8 +26,8 @@ public class RootSpawner : MonoBehaviour
             RootManager.roots.Add(rootToAdd);
         }
 
-        RootManager.Draw();
         Tick();
+        //RootManager.Draw();
 
         //float timeRemaining = 5 ;
         //timeRemaining -= Time.deltaTime;
@@ -39,11 +39,11 @@ public class RootSpawner : MonoBehaviour
     {
         float timeRemaining = 5;
         while(timeRemaining > 0)
-        { timeRemaining -= Time.deltaTime; }
-        
-        { RootManager.Draw(); }
-        while (RootManager.roots.Count > 0)
-            Tick();
+        { timeRemaining -= Time.deltaTime;
+            Debug.Log(timeRemaining);
+        }
+        if (timeRemaining > 0 && timeRemaining < 1)
+            RootManager.Draw();
     }
 
 
@@ -68,6 +68,8 @@ public class RootSpawner : MonoBehaviour
             // spawnPivot.transform.position = new Vector2(spawnPivot.transform.position.x, spawnPivot.transform.position.y + 1);
             //spawnPivot.transform.position= nespawnPivot.transform.position.x, (int)spawnPivot.transform.position.y + 1;
         }
+        Tick();
+        //RootManager.Draw();
 
     }
 }
