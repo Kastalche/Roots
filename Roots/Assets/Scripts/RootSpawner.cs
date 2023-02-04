@@ -26,7 +26,7 @@ public class RootSpawner : MonoBehaviour
             //Vector3 pos = pivot + new Vector3(Random.Range(-1 * Horizontalrange + 1f, Horizontalrange + 1f), -4f, pivot.z - 1f);
             Vector3 pos = pivot + new Vector3(Random.Range(-0.2f, 0.2f), -1.5f, pivot.z - 1);
             var rootToAdd = Instantiate(root.transform.GetChild(0), pos, Quaternion.Euler(new Vector3(0, 0, Random.Range(-45f, 45f))));
-            rootToAdd.GetComponent<SpriteRenderer>().sprite = RootManager.sprites[Random.Range(0, RootManager.sprites.Length)]; ;
+            //rootToAdd.GetComponent<SpriteRenderer>().sprite = RootManager.sprites[Random.Range(0, RootManager.sprites.Length)]; ;
 
             spawnedRoots.Add(rootToAdd.gameObject);
             RootManager.roots.Add(rootToAdd.gameObject);
