@@ -5,13 +5,17 @@ using UnityEngine;
 public class Root : MonoBehaviour
 {
     public int clickCount;
-    public int clicks=0;
+    int clicks=0;
+    public Sprite[] rootstates;
     // Start is called before the first frame update
     void OnMouseUpAsButton()
     {
-        if (gameObject.GetComponent<SpriteRenderer>().color == new Color32(0, 0, 0, 255))
+        if (gameObject.GetComponent<SpriteRenderer>().color == Color.white) 
         {
             clicks++;
+            gameObject.GetComponent<SpriteRenderer>().sprite=rootstates[clicks];
+
+
             if (clicks == clickCount)
             {
                 
