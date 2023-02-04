@@ -11,18 +11,18 @@ public class RootManagerScript : MonoBehaviour
     Vector3 testvector = new Vector3(0, 1, 1);
     public void Draw()
     {
-        int randomRoot = Random.Range(0, 5);
+        int randomRoot = Random.Range(0, roots.Count);
         for (int i = 0; i < roots.Count; i++)
         {
             if (i == randomRoot)
             {
-                roots[i].SetActive(true);
+                //roots[i].SetActive(true);
                 roots[i].GetComponent<SpriteRenderer>().color = cBlack;
             }
-            else
-            {
-                roots[i].GetComponent<SpriteRenderer>().color = cBrown;
-            }
+            //else
+            //{
+            //    roots[i].GetComponent<SpriteRenderer>().color = cBrown;
+            //}
         }
     }
 
@@ -30,5 +30,6 @@ public class RootManagerScript : MonoBehaviour
     void Update()
     {
         //roots[1].color= false;
+        // test
     }
 }
