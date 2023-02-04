@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class RootManagerScript : MonoBehaviour
 {
-    public GameObject[] roots;
+    public List<GameObject> roots;
     public Color32 cBrown = new Color32(139, 69, 19, 255);
     public Color32 cBlack = new Color32(0, 0, 0, 255);
     // Start is called before the first frame update
     Vector3 testvector = new Vector3(0, 1, 1);
-    void Start()
+    public void Draw()
     {
-        int randomRoot = Random.Range(0, roots.Length);
-        for (int i = 0; i < roots.Length; i++)
+        int randomRoot = Random.Range(0, 5);
+        for (int i = 0; i < roots.Count; i++)
         {
             if (i == randomRoot)
             {

@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class Root : MonoBehaviour
 {
-
+    public int clickCount;
+    int clicks=0;
     // Start is called before the first frame update
     void OnMouseUpAsButton()
     {
-        Destroy(gameObject);
+        if (gameObject.GetComponent<SpriteRenderer>().color == new Color32(0, 0, 0, 255))
+        {
+            clicks++;
+            if (clicks == clickCount)
+                Destroy(gameObject);
+        }
     }
     void Start()
     {
@@ -20,4 +26,5 @@ public class Root : MonoBehaviour
     {
         
     }
+    
 }

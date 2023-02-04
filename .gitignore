@@ -65,4 +65,11 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+*.json
+Roots/Packages/packages-lock.json
+Roots/ProjectSettings/ProjectVersion.txt
 Roots/UserSettings/EditorUserSettings.asset
+Roots/UserSettings/Layouts/default-2021.dwlt
+*.txt
+*.asset
+*.dwlt
