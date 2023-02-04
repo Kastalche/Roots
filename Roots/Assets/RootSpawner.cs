@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class RootSpawner : MonoBehaviour
@@ -28,6 +29,7 @@ public class RootSpawner : MonoBehaviour
             RootManager.roots.Add(rootToAdd);
         }
 
+        
         //RootManager.Draw();
 
         //float timeRemaining = 5 ;

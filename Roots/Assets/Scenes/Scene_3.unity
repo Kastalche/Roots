@@ -238,6 +238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RootManager: {fileID: 1412935436}
   timeForRoots: 5
+  timerForGame: 10
 --- !u!4 &406835355
 Transform:
   m_ObjectHideFlags: 0
