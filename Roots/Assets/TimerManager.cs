@@ -6,6 +6,20 @@ public class TimerManager : MonoBehaviour
 {
     public RootManagerScript RootManager;
     public float timeForRoots;
+    public float timerForGame;
+    
+    void gameTime()
+    {
+        Debug.Log(timerForGame);
+        if (timerForGame > 1f)
+        {
+            timerForGame -= Time.deltaTime;
+        }
+        else
+        {
+            Debug.Log("Game Over");
+        }
+    }
     void Tick()
     {
         if (timeForRoots > 0f)
@@ -18,6 +32,8 @@ public class TimerManager : MonoBehaviour
             RootManager.Draw();
             timeForRoots = 3f;
         }
+        
+        
 
     }
     // Start is called before the first frame update
@@ -30,6 +46,6 @@ public class TimerManager : MonoBehaviour
     void Update()
     {
         Tick();
-
+        gameTime();
     }
 }
