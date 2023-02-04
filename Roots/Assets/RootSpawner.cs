@@ -12,6 +12,8 @@ public class RootSpawner : MonoBehaviour
     public float Verticalrange = 1;
     public List<GameObject> spawnedRoots = new List<GameObject>();
 
+    //public float TimerForRoots;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +28,6 @@ public class RootSpawner : MonoBehaviour
             RootManager.roots.Add(rootToAdd);
         }
 
-        Tick();
         //RootManager.Draw();
 
         //float timeRemaining = 5 ;
@@ -35,16 +36,7 @@ public class RootSpawner : MonoBehaviour
 
     }
 
-    void Tick()
-    {
-        float timeRemaining = 5;
-        while(timeRemaining > 0)
-        { timeRemaining -= Time.deltaTime;
-            Debug.Log(timeRemaining);
-        }
-        if (timeRemaining > 0 && timeRemaining < 1)
-            RootManager.Draw();
-    }
+    
 
 
     // Update is called once per frame
@@ -61,14 +53,12 @@ public class RootSpawner : MonoBehaviour
 
         if (spawnedRoots.Count < 1)
         {
-            //fly
-            Debug.Log("log");
             spawnPivot.transform.position += Vector3.up * 0.6f * Time.deltaTime;
             //yield return new WaitForSeconds(0.01f);
             // spawnPivot.transform.position = new Vector2(spawnPivot.transform.position.x, spawnPivot.transform.position.y + 1);
             //spawnPivot.transform.position= nespawnPivot.transform.position.x, (int)spawnPivot.transform.position.y + 1;
         }
-        Tick();
+        //Tick(TimerForRoots);
         //RootManager.Draw();
 
     }
