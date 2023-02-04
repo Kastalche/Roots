@@ -8,8 +8,8 @@ public class RootSpawner : MonoBehaviour
     public int rootsCount; 
     public GameObject root;
     public GameObject spawnPivot;
-    public float Horizontalrange = 5;
-    public float Verticalrange = 5;
+    public float Horizontalrange = 1;
+    public float Verticalrange = 1;
     public List<GameObject> spawnedRoots = new List<GameObject>();
 
     // Start is called before the first frame update
@@ -18,16 +18,33 @@ public class RootSpawner : MonoBehaviour
         Vector3 pivot = spawnPivot.transform.position;
         for (int i = 0; i < rootsCount; ++i)
         {
-            Vector3 pos = pivot + new Vector3(Random.Range(-1 * Horizontalrange, Horizontalrange), Random.Range(-1 * Verticalrange, 0), 0f);
+            Vector3 pos = pivot + new Vector3(Random.Range(-1 * Horizontalrange, Horizontalrange), Random.Range(-1 * Verticalrange - 1, Verticalrange - 1), pivot.z);
             var rootToAdd = Instantiate(root, pos, Quaternion.identity);
 
 
             spawnedRoots.Add(rootToAdd);
             RootManager.roots.Add(rootToAdd);
         }
+
         RootManager.Draw();
+        Tick();
+
+        //float timeRemaining = 5 ;
+        //timeRemaining -= Time.deltaTime;
+        
+
     }
 
+    void Tick()
+    {
+        float timeRemaining = 5;
+        while(timeRemaining > 0)
+        { timeRemaining -= Time.deltaTime; }
+        
+        { RootManager.Draw(); }
+        while (RootManager.roots.Count > 0)
+            Tick();
+    }
 
 
     // Update is called once per frame
