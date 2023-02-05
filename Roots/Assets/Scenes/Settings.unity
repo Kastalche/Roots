@@ -300,7 +300,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9abfe8d27330195459bc201499b155bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  music: {fileID: 1901768286}
 --- !u!1 &1901768286
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,8 +326,8 @@ AudioSource:
   m_GameObject: {fileID: 1901768286}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 2df9dd55cbd826a499a2a669bd949417, type: 2}
-  m_audioClip: {fileID: 8300000, guid: be59db907d088b54099b2326c7138706, type: 3}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 360c1b36ea0bf794fbedd45e7175c538, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 8b39f123ef09b58458b3287e7ed2ebf5, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1200,10 +1199,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4481802800250945483}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79d88709b4aa09248b26bc7f502e4f5f, type: 3}
+  m_Script: {fileID: 11500000, guid: acb6221f7067c1342be3ebe9b3b53cfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 24100000, guid: 2df9dd55cbd826a499a2a669bd949417, type: 2}
+  audioMixer: {fileID: 24100000, guid: 360c1b36ea0bf794fbedd45e7175c538, type: 2}
 --- !u!4 &4481802800261831652
 Transform:
   m_ObjectHideFlags: 0
@@ -1287,7 +1286,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &4481802800338104520
 MonoBehaviour:
   m_ObjectHideFlags: 0

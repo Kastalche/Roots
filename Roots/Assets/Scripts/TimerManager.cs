@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TimerManager : MonoBehaviour
 {
@@ -17,7 +18,8 @@ public class TimerManager : MonoBehaviour
         }
         else
         {
-           // Debug.Log("Game Over");
+            // Debug.Log("Game Over");
+            SceneManager.LoadScene("GameOver");
         }
     }
     void Tick()
