@@ -4,6 +4,7 @@ using System.Linq;
 using Unity.VisualScripting;
 using UnityEditor.EditorTools;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using static UnityEditor.Progress;
 
 public class RootSpawner : MonoBehaviour
@@ -20,7 +21,7 @@ public class RootSpawner : MonoBehaviour
     public GameObject rock2;
     public GameObject rock3;
 
-    public int playerCounter = 0;
+    
     //public Sprite[] sprites;
     //public float TimerForRoots;
 
@@ -84,8 +85,8 @@ public class RootSpawner : MonoBehaviour
 
             Debug.Log(" Letish)"); ;
             spawnPivot.transform.position += Vector3.up * 0.6f * Time.deltaTime;
-            playerCounter++;
-            
+            RootManager.isFlying = true;
+
         }
         if (RootManager.roots.Count < 1)
         {
@@ -113,7 +114,7 @@ public class RootSpawner : MonoBehaviour
             }
 
             //}
-            Debug.Log("Game Over");
+           // Debug.Log("Game Over");
         }
 
     }

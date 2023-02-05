@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Root : MonoBehaviour
 {
-     public AudioSource rootdestroy;
+   // public AudioSource rootdestroy;
     public int clickCount;
     int clicks=0;
     public Sprite[] rootstates;
@@ -19,7 +19,7 @@ public class Root : MonoBehaviour
 
             if (clicks == clickCount)
             {
-                rootdestroy.Play();
+              //  rootdestroy.Play();
                 Destroy(gameObject);
                 Debug.Log(gameObject);
             }

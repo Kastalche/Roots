@@ -211,6 +211,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 7629ebae4f2102a41b098f5f856b3a89, type: 3}
   - {fileID: 21300000, guid: 674bbc33a9bd97649b849c945b6cd6b4, type: 3}
   - {fileID: 21300000, guid: 9f009e748f91a0b45ba8fb22e587e1fe, type: 3}
+  isFlying: 0
 --- !u!4 &258915764
 Transform:
   m_ObjectHideFlags: 0
@@ -5361,7 +5362,6 @@ MonoBehaviour:
   rock1: {fileID: 1950403812}
   rock2: {fileID: 338320226}
   rock3: {fileID: 833977377}
-  playerCounter: 0
 --- !u!212 &535139473
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11015,6 +11015,7 @@ MonoBehaviour:
   RootManager: {fileID: 258915763}
   timeForRoots: 0
   timerForGame: 5
+  timeForLooseGame: 27
 --- !u!4 &1289823679
 Transform:
   m_ObjectHideFlags: 0
@@ -11352,7 +11353,6 @@ MonoBehaviour:
   rock1: {fileID: 1950403812}
   rock2: {fileID: 338320226}
   rock3: {fileID: 833977377}
-  playerCounter: 0
 --- !u!212 &1611363591
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11646,7 +11646,6 @@ MonoBehaviour:
   rock1: {fileID: 1950403812}
   rock2: {fileID: 338320226}
   rock3: {fileID: 833977377}
-  playerCounter: 0
 --- !u!212 &1840267827
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16699,6 +16698,7 @@ MonoBehaviour:
     rgba: 4282927736
   isPlayerActive: 0
   sprites: []
+  isFlying: 0
 --- !u!4 &1962090587
 Transform:
   m_ObjectHideFlags: 0

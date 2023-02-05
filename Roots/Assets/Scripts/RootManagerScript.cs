@@ -11,6 +11,7 @@ public class RootManagerScript : MonoBehaviour
     public bool isPlayerActive;
     // Start is called before the first frame update
     public Sprite[] sprites;
+    public bool isFlying;
     
     public void Draw()
     {
