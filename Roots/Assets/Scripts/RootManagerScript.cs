@@ -8,9 +8,10 @@ public class RootManagerScript : MonoBehaviour
     public Color32 cBrown = new Color32(139, 69, 19, 255);
     public Color32 cdBlack ;
 
-    
+    public bool isPlayerActive;
     // Start is called before the first frame update
     public Sprite[] sprites;
+    
     public void Draw()
     {
         int randomRoot = Random.Range(0, roots.Count);
@@ -28,6 +29,7 @@ public class RootManagerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         //roots[1].color= false;
     }
 }

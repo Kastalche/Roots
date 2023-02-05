@@ -306,6 +306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickCount: 0
+  rootstates: []
 --- !u!58 &500465089
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -529,6 +530,7 @@ MonoBehaviour:
   cBlack:
     serializedVersion: 2
     rgba: 4278190080
+  sprites: []
 --- !u!4 &1412935437
 Transform:
   m_ObjectHideFlags: 0
@@ -987,6 +989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickCount: 0
+  rootstates: []
 --- !u!58 &2065708102
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1102,6 +1105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickCount: 0
+  rootstates: []
 --- !u!58 &2094607632
 CircleCollider2D:
   m_ObjectHideFlags: 0
