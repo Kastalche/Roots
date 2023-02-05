@@ -10,7 +10,7 @@ public class Root : MonoBehaviour
     // Start is called before the first frame update
     void OnMouseUpAsButton()
     {
-        if (gameObject.GetComponent<SpriteRenderer>().color == Color.white) 
+        if (gameObject.GetComponent<SpriteRenderer>().color == new Color32(120, 74, 72, 255)) 
         {
             clicks++;
             gameObject.GetComponent<SpriteRenderer>().sprite=rootstates[clicks];

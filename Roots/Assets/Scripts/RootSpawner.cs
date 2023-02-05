@@ -14,9 +14,13 @@ public class RootSpawner : MonoBehaviour
     public float Horizontalrange = 0.01f;
     public float Verticalrange = 0.1f;
     public List<GameObject> spawnedRoots = new List<GameObject>();
+
+    public GameObject rock1;
+    public GameObject rock2;
+    public GameObject rock3;
     //public Sprite[] sprites;
     //public float TimerForRoots;
-    
+
     // Start is called before the first frame update
     void Start()
     {   
@@ -26,7 +30,7 @@ public class RootSpawner : MonoBehaviour
             //Vector3 pos = pivot + new Vector3(Random.Range(-1 * Horizontalrange + 1f, Horizontalrange + 1f), -4f, pivot.z - 1f);
             Vector3 pos = pivot + new Vector3(Random.Range(-0.2f, 0.2f), -1.5f, pivot.z - 1);
             var rootToAdd = Instantiate(root.transform.GetChild(0), pos, Quaternion.Euler(new Vector3(0, 0, Random.Range(-45f, 45f))));
-            rootToAdd.GetComponent<SpriteRenderer>().sprite = RootManager.sprites[Random.Range(0, RootManager.sprites.Length)]; ;
+            //rootToAdd.GetComponent<SpriteRenderer>().sprite = RootManager.sprites[Random.Range(0, RootManager.sprites.Length)]; ;
 
             spawnedRoots.Add(rootToAdd.gameObject);
             RootManager.roots.Add(rootToAdd.gameObject);
@@ -64,6 +68,19 @@ public class RootSpawner : MonoBehaviour
 
         if (spawnedRoots.Count < 1)
         {
+            if(gameObject.name=="Square")
+            {
+                rock1.active = true;
+            }
+            if(gameObject.name=="Square (1)")
+            {
+                rock3.active = true;
+            }
+            if(gameObject.name=="Square (2)")
+            {
+                rock2.active = true;
+            }
+
             Debug.Log(" Letish)"); ;
             spawnPivot.transform.position += Vector3.up * 0.6f * Time.deltaTime;
         }
