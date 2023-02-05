@@ -176,7 +176,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -273,7 +273,7 @@ SpriteRenderer:
   m_Size: {x: 2.65, y: 3.05}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &124090496
@@ -284,7 +284,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 124090494}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.46, y: 0.25, z: 0}
+  m_LocalPosition: {x: -11.43, y: -1.52, z: 0}
   m_LocalScale: {x: 1.8004401, y: 2.4787736, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5291,7 +5291,7 @@ SpriteRenderer:
   m_Size: {x: 2.65, y: 3.05}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &535556737
@@ -5302,7 +5302,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 535556735}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.34444, y: -1.81, z: 0}
+  m_LocalPosition: {x: 0.23444003, y: -5.62, z: 0}
   m_LocalScale: {x: 1.527433, y: 1.6216861, z: 0.94697}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5386,7 +5386,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 613680147}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.5063, y: -0.0194, z: 4.8600006}
+  m_LocalPosition: {x: -5.6, y: -0, z: 4.9}
   m_LocalScale: {x: 0.59431463, y: 0.59431463, z: 0.59431463}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5476,7 +5476,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1186265881}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.39, y: 0.65, z: 0}
+  m_LocalPosition: {x: 0.28, y: -3.16, z: 0}
   m_LocalScale: {x: 0.677294, y: 0.6965855, z: 0.4119559}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5521,6 +5521,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 8c1edda2f66d3c14e8c9774317f43d07, type: 3}
+    - target: {fileID: 8062897922945536931, guid: c0b64417186525d43b0a1c8ff641178d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8062897922945536932, guid: c0b64417186525d43b0a1c8ff641178d, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -5799,7 +5803,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1636256422}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.4399996, y: 1.77, z: 0}
+  m_LocalPosition: {x: -11.41, y: 0, z: 0}
   m_LocalScale: {x: 0.3166065, y: 0.46949407, z: 0.22218}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5903,7 +5907,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1664435191}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.97, y: 1.2, z: 0}
+  m_LocalPosition: {x: 4.97, y: -1.39, z: 0}
   m_LocalScale: {x: 0.26623273, y: 0.39479512, z: 0.18683}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6079,7 +6083,7 @@ SpriteRenderer:
   m_Size: {x: 2.65, y: 3.05}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &2068387498
@@ -6090,7 +6094,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068387496}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.1456, y: 0.21, z: 0}
+  m_LocalPosition: {x: 5.1456, y: -2.38, z: 0}
   m_LocalScale: {x: 1.8901983, y: 2.391987, z: 0.94697}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6180,7 +6184,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &2094607631
@@ -6196,7 +6200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickCount: 0
-  clicks: 0
+  rootstates: []
 --- !u!58 &2094607632
 CircleCollider2D:
   m_ObjectHideFlags: 0

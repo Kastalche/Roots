@@ -8,7 +8,6 @@ public class RootManagerScript : MonoBehaviour
     public Color32 cBrown = new Color32(139, 69, 19, 255);
     public Color32 cBlack = new Color32(0, 0, 0, 255);
     // Start is called before the first frame update
-    Vector3 testvector = new Vector3(0, 1, 1);
     public Sprite[] sprites;
     public void Draw()
     {
@@ -18,13 +17,8 @@ public class RootManagerScript : MonoBehaviour
             
             if (i == randomRoot)
             {
-                //roots[i].SetActive(true);
                 roots[i].transform.GetComponent<SpriteRenderer>().color = cBlack;
             }
-            //else
-            //{
-            //    roots[i].GetComponent<SpriteRenderer>().color = cBrown;
-            //}
         }
     }
 
@@ -32,6 +26,5 @@ public class RootManagerScript : MonoBehaviour
     void Update()
     {
         //roots[1].color= false;
-        // test
     }
 }
