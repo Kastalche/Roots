@@ -1,9 +1,13 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+guid: b712c4ddda0f42243990abac089f1b98
+=======
+<<<<<<< HEAD
 guid: d5a448208df966548929d0c174792eed
 =======
 guid: ae9ba267d162c2347a3da2c68c1174de
 >>>>>>> 2ccdeed585d89b417bf43ad14e78b43fa874a647
+>>>>>>> a7d315af614c23eb59fe2c2663d1a9372ace3607
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -46,7 +50,11 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
+<<<<<<< HEAD
+  spriteMode: 1
+=======
   spriteMode: 2
+>>>>>>> a7d315af614c23eb59fe2c2663d1a9372ace3607
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -105,6 +113,11 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
+  spriteSheet:
+    serializedVersion: 2
+    sprites: []
+=======
   - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
@@ -225,6 +238,7 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+>>>>>>> a7d315af614c23eb59fe2c2663d1a9372ace3607
     outline: []
     physicsShape: []
     bones: []
@@ -235,12 +249,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+<<<<<<< HEAD
+    nameFileIdTable: {}
+=======
     nameFileIdTable:
       Sprite strip 1_strip5_1: -414167354
       Sprite strip 1_strip5_2: -2134236122
       Sprite strip 1_strip5_3: -696731179
       Sprite strip 1_strip5_0: -1948075382
       Sprite strip 1_strip5_4: 1201302489
+>>>>>>> a7d315af614c23eb59fe2c2663d1a9372ace3607
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
