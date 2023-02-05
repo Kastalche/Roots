@@ -7,6 +7,8 @@ public class RootManagerScript : MonoBehaviour
     public List<GameObject> roots;
     public Color32 cBrown = new Color32(139, 69, 19, 255);
     public Color32 cdBlack ;
+
+    
     // Start is called before the first frame update
    // Vector3 testvector = new Vector3(0, 1, 1);
     public Sprite[] sprites;
