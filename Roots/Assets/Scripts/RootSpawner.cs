@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
+using UnityEditor.EditorTools;
 using UnityEngine;
 using static UnityEditor.Progress;
 
@@ -18,6 +19,8 @@ public class RootSpawner : MonoBehaviour
     public GameObject rock1;
     public GameObject rock2;
     public GameObject rock3;
+
+    public int playerCounter = 0;
     //public Sprite[] sprites;
     //public float TimerForRoots;
 
@@ -35,8 +38,6 @@ public class RootSpawner : MonoBehaviour
             spawnedRoots.Add(rootToAdd.gameObject);
             RootManager.roots.Add(rootToAdd.gameObject);
         }
-        
-
     }
 
     
@@ -65,7 +66,7 @@ public class RootSpawner : MonoBehaviour
                 Debug.Log("removed");
             }
         }
-
+    
         if (spawnedRoots.Count < 1)
         {
             if(gameObject.name=="Square")
@@ -83,6 +84,27 @@ public class RootSpawner : MonoBehaviour
 
             Debug.Log(" Letish)"); ;
             spawnPivot.transform.position += Vector3.up * 0.6f * Time.deltaTime;
+            playerCounter++;
+            
         }
+        if (RootManager.roots.Count < 1)
+        {
+            PlayerController player = GetComponent<PlayerController>();
+            player.enabled = true;
+            float time = 0; 
+            time -=  Time.deltaTime;
+            if (gameObject.name == "Square (2)")
+            {
+                Destroy(gameObject);
+            }
+            if (gameObject.name == "Square (1)")
+            {
+                Destroy(gameObject);
+            }
+
+            //}
+            Debug.Log("Game Over");
+        }
+
     }
 }
