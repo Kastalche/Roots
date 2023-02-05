@@ -5417,7 +5417,7 @@ MonoBehaviour:
   rock1: {fileID: 1950403812}
   rock2: {fileID: 338320226}
   rock3: {fileID: 833977377}
-  playerCounter: 3
+  playerCounter: 0
 --- !u!212 &535139473
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5499,7 +5499,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rootManager: {fileID: 0}
   obstacleController: {fileID: 143923289}
-  scoreController: {fileID: 0}
+  scoreController: {fileID: 1278673312}
   speed: 100
   hp: 10
 --- !u!50 &535139476
@@ -11388,7 +11388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rootManager: {fileID: 0}
   obstacleController: {fileID: 143923289}
-  scoreController: {fileID: 0}
+  scoreController: {fileID: 1278673312}
   speed: 100
   hp: 10
 --- !u!50 &1611363594
@@ -11692,7 +11692,7 @@ MonoBehaviour:
   rock1: {fileID: 1950403812}
   rock2: {fileID: 338320226}
   rock3: {fileID: 833977377}
-  playerCounter: 3
+  playerCounter: 0
 --- !u!212 &1840267827
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11774,7 +11774,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rootManager: {fileID: 0}
   obstacleController: {fileID: 143923289}
-  scoreController: {fileID: 0}
+  scoreController: {fileID: 1278673312}
   speed: 100
   hp: 10
 --- !u!61 &1840267830

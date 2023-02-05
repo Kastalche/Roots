@@ -93,13 +93,18 @@ public class RootSpawner : MonoBehaviour
             player.enabled = true;
             float time = 0; 
             time -=  Time.deltaTime;
-            if (gameObject.name == "Square (2)")
+            
+            ObstacleController obstacleController = GetComponent<ObstacleController>();
+            obstacleController.enabled = true;
+
+            SpriteRenderer spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+           
+            
+            if (gameObject.name != "Square")
             {
-                Destroy(gameObject);
-            }
-            if (gameObject.name == "Square (1)")
-            {
-                Destroy(gameObject);
+                //Destroy(gameObject);
+                gameObject.SetActive(false);
+                //gameObject.GetComponent<ObstacleController>().enabled = false;  
             }
 
             //}

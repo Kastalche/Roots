@@ -35,11 +35,16 @@ public class ObstacleController : MonoBehaviour {
     void checkIfOutOfView() {
         GameObject temp;
         for(int i = 0; i < listOfObstacleObjects.Count; ++i){
-            if(listOfObstacleObjects[i].transform.position.y < (-1 * screenBoundries.y)) {
-                temp = listOfObstacleObjects[i];
-                listOfObstacleObjects.Remove(temp);
-                Destroy(temp);
+            if (listOfObstacleObjects[i] != null)
+            {
+                if (listOfObstacleObjects[i].transform.position.y < (-1 * screenBoundries.y))
+                {
+                    temp = listOfObstacleObjects[i];
+                    listOfObstacleObjects.Remove(temp);
+                    Destroy(temp);
+                }
             }
+           
         }
     }
 
