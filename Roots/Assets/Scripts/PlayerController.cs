@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collider) {
         obstacleController.CollectedObstacle(collider.gameObject);
-       // scoreController.updateScore(--hp);
+        scoreController.updateScore(--hp);
         if(hp < 0) {
             Debug.Log("GameOver");
         }

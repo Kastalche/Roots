@@ -102,8 +102,13 @@ public class RootSpawner : MonoBehaviour
             
             if (gameObject.name != "Square")
             {
-                //Destroy(gameObject);
+                Rigidbody2D rigidbody2D = GetComponent<Rigidbody2D>();
+                //rigidbody2D.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+              //  //  rigidbody2D.transform.position.Set(-1000, 0, 0);
                 gameObject.SetActive(false);
+                Destroy(gameObject);
+
+
                 //gameObject.GetComponent<ObstacleController>().enabled = false;  
             }
 
