@@ -10,7 +10,6 @@ public class RootManagerScript : MonoBehaviour
 
     
     // Start is called before the first frame update
-   // Vector3 testvector = new Vector3(0, 1, 1);
     public Sprite[] sprites;
     public void Draw()
     {
@@ -23,10 +22,6 @@ public class RootManagerScript : MonoBehaviour
                 //roots[i].SetActive(true);
                 roots[i].transform.GetComponent<SpriteRenderer>().color = cdBlack; 
             }
-            //else
-            //{
-            //    roots[i].GetComponent<SpriteRenderer>().color = cBrown;
-            //}
         }
     }
 
@@ -34,6 +29,5 @@ public class RootManagerScript : MonoBehaviour
     void Update()
     {
         //roots[1].color= false;
-        // test
     }
 }

@@ -123,3 +123,5 @@ Roots/UserSettings/Layouts/default-2021.dwlt
 *.asset
 *.txt
 *.json
+*.meta
+Roots/UserSettings/EditorUserSettings.asset
