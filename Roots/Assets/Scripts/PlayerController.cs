@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-
+    public RootManagerScript rootManager;
     public ObstacleController obstacleController;
     public ScoreController scoreController;
     public float speed = 100f;
@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start() {
         screenBoundries = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
+        
     }
 
     // Update is called once per frame
@@ -25,6 +26,7 @@ public class PlayerController : MonoBehaviour
         pos.x = Mathf.Clamp(pos.x, (-1 * screenBoundries.x + 0.5f), screenBoundries.x - 0.5f);
         pos.y = Mathf.Clamp(pos.y, (-1 * screenBoundries.y + 0.5f), screenBoundries.y - 0.5f);
         transform.position = pos;
+        
     }
 
     void OnCollisionEnter2D(Collision2D collider) {
